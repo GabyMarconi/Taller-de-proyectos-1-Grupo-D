@@ -6,10 +6,10 @@
 
 ### 🐱 Integrantes del Equipo
 
-| **Allison Mariana Choccña Pauccara** | **Elizabeth Carina Lavilla Pillco** | **Gaby Leidy Marconi Aracayo** |
-| :--- | :--- | :--- |
-| *Integrante 1* | *Integrante 2* | *Integrante 3* |
-| ![Allison](https://ghchart.rshah.org/FF6B6B/Allison827) | ![Elizabeth](https://ghchart.rshah.org/4ECDC4/ElizabethCarinaLavillaPillco) | ![Gaby](https://ghchart.rshah.org/45B7D1/GabyMarconi) |
+| **Allison Mariana Choccña Pauccara** | **Elizabeth Carina Lavilla Pillco** | **Gaby Leidy Marconi Aracayo** | **Alejandro Fabrizio Rojas Aparicio** |
+| :--- | :--- | :--- | :--- |
+| *Integrante 1* | *Integrante 2* | *Integrante 3* | *Integrante 4* |
+| ![Allison](https://ghchart.rshah.org/FF6B6B/Allison827) | ![Elizabeth](https://ghchart.rshah.org/4ECDC4/ElizabethCarinaLavillaPillco) | ![Gaby](https://ghchart.rshah.org/45B7D1/GabyMarconi) | ![Alejandro](https://ghchart.rshah.org/6BFFE3/BRADDEM29) |
 
 
 
