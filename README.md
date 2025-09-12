@@ -20,7 +20,7 @@ Este repositorio contiene nuestro trabajo para el curso **Taller de Proyectos 1*
 ## 🎮 Cómo Ejecutar el Proyecto
 ```bash
 # Clona el repositorio
-git clone https://github.com/tu-usuario/Taller-de-proyectos-1-Grupo-D.git
+git clone https://github.com/GabyMarconi/Taller-de-proyectos-1-Grupo-D.git
 
 # Navega al directorio
 cd Taller-de-proyectos-1-Grupo-D
