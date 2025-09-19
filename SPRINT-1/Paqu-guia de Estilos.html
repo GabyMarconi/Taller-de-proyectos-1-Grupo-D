@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paqu - Guía de Estilos Tipográficos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Paleta Principal Mejorada */
+            --color-primary: #FFC107; /* Amarillo más vibrante */
+            --color-primary-dark: #E6A800; /* Amarillo oscuro para hover/active */
+            --color-secondary: #5D3F6A; /* Púrpura más suave y versátil */
+            --color-accent: #E74C3C; /* Rojo más intenso y accesible */
+            --color-dark: #2C3E50; /* Azul oscuro en lugar de negro puro */
+            --color-light: #F9F7F0; /* Beige más claro y limpio */
+            
+            /* Nueva Paleta Secundaria para Lecciones */
+            --lesson-color-1: #3498DB; /* Azul - Gramática */
+            --lesson-color-2: #2ECC71; /* Verde - Vocabulario */
+            --lesson-color-3: #9B59B6; /* Violeta - Cultura */
+            --lesson-color-4: #E67E22; /* Naranja - Conversación */
+            --lesson-color-5: #1ABC9C; /* Turquesa - Ejercicios */
+            
+            --font-primary: 'Patrick Hand', cursive;
+            --font-secondary: 'Comic Neue', cursive;
+            --border-radius: 16px;
+            --box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-secondary);
+            background-color: var(--color-light);
+            color: var(--color-dark);
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            border-radius: var(--border-radius);
+            margin-bottom: 30px;
+            box-shadow: var(--box-shadow);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .logo-container {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 4px solid var(--color-secondary);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            font-size: 60px;
+            color: var(--color-secondary);
+        }
+        
+        h1 {
+            font-family: var(--font-primary);
+            font-size: 2.8rem;
+            color: var(--color-secondary);
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        
+        h2 {
+            font-family: var(--font-primary);
+            color: var(--color-secondary);
+            margin: 30px 0 15px;
+            font-size: 2rem;
+            border-bottom: 2px dashed var(--color-primary);
+            padding-bottom: 8px;
+        }
+        
+        h3 {
+            font-family: var(--font-primary);
+            color: var(--color-accent);
+            margin: 20px 0 10px;
+            font-size: 1.6rem;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        
+        @media (min-width: 768px) {
+            .container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .card {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 25px;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .typography-sample {
+            padding: 20px;
+            background: white;
+            border-left: 5px solid var(--color-primary);
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+        
+        .font-demo-primary {
+            font-family: var(--font-primary);
+        }
+        
+        .font-demo-secondary {
+            font-family: var(--font-secondary);
+        }
+        
+        .title-sample {
+            font-size: 2.2rem;
+            line-height: 1.2;
+        }
+        
+        .subtitle-sample {
+            font-size: 1.8rem;
+            line-height: 1.3;
+        }
+        
+        .body-sample {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        
+        .button-sample {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--color-accent);
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            margin: 10px 5px;
+            border: none;
+            cursor: pointer;
+            font-family: var(--font-secondary);
+            font-size: 1.1rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: var(--transition);
+        }
+        
+        .button-sample:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            background-color: var(--color-primary);
+            color: var(--color-dark);
+        }
+        
+        .color-palette {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .color-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .color-box {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: var(--transition);
+        }
+        
+        .color-box:hover {
+            transform: scale(1.1);
+        }
+        
+        .lesson-palette {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .lesson-color-item {
+            padding: 15px;
+            border-radius: 12px;
+            color: white;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+        
+        .lesson-color-item:hover {
+            transform: translateY(-3px);
+        }
+        
+        .implementation {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            font-family: monospace;
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: var(--color-secondary);
+            font-family: var(--font-primary);
+            font-size: 1.2rem;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin: 0 5px;
+            background-color: var(--color-primary);
+            color: var(--color-dark);
+        }
+        
+        .contrast-check {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-left: 8px;
+            background: #eee;
+        }
+        
+        .contrast-good {
+            background: #2ecc71;
+            color: white;
+        }
+        
+        .contrast-excellent {
+            background: #27ae60;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo">🦙</div>
+        </div>
+        <h1>Paqu - Guía de Estilos </h1>
+        <p>Tipografía y paletas de colores para la aplicación de aprendizaje de Quechua</p>
+    </header>
+    
+    <div class="container">
+        <div class="card">
+            <h2>Tipografías Seleccionadas</h2>
+            
+            <h3>Principal: Patrick Hand</h3>
+            <div class="typography-sample font-demo-primary">
+                <div class="title-sample">Título principal</div>
+                <div class="subtitle-sample">Subtítulo atractivo</div>
+                <div class="body-sample">Texto de cuerpo que demuestra legibilidad y estilo amigable para jóvenes.</div>
+            </div>
+            <p>Seleccionada por su apariencia manuscrita y amigable, ideal para el público joven.</p>
+            
+            <h3>Secundaria: Comic Neue</h3>
+            <div class="typography-sample font-demo-secondary">
+                <div class="title-sample">Título secundario</div>
+                <div class="subtitle-sample">Subtítulo claro</div>
+                <div class="body-sample">Texto de cuerpo que garantiza máxima legibilidad incluso en tamaños pequeños.</div>
+            </div>
+            <p>Elegida por su claridad y legibilidad, perfecta para textos largos y explicaciones.</p>
+        </div>
+        
+        <div class="card">
+            <h2>Paleta de Colores Principal Mejorada</h2>
+            <p>Colores con mejor contraste y armonía, manteniendo la esencia andina.</p>
+            
+            <div class="color-palette">
+                <div class="color-item">
+                    <div class="color-box" style="background-color: var(--color-primary);"></div>
+                    <span>Primario<br>#FFC107</span>
+                    <span class="contrast-check contrast-good">AA</span>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: var(--color-secondary);"></div>
+                    <span>Secundario<br>#5D3F6A</span>
+                    <span class="contrast-check contrast-excellent">AAA</span>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: var(--color-accent);"></div>
+                    <span>Acento<br>#E74C3C</span>
+                    <span class="contrast-check contrast-good">AA</span>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: var(--color-dark);"></div>
+                    <span>Texto<br>#2C3E50</span>
+                    <span class="contrast-check contrast-excellent">AAA</span>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: var(--color-light); border: 1px solid #eee;"></div>
+                    <span>Fondo<br>#F9F7F0</span>
+                </div>
+            </div>
+            
+            <h3>Aplicación de colores</h3>
+            <p>Los colores se utilizarán de manera consistente en toda la aplicación:</p>
+            <ul>
+                <li>Fondos: Beige claro (#F9F7F0) para reducir la fatiga visual</li>
+                <li>Texto: Azul oscuro (#2C3E50) para contraste suave pero efectivo</li>
+                <li>Botones y elementos interactivos: Amarillo vibrante (#FFC107)</li>
+                <li>Elementos destacados: Púrpura (#5D3F6A) y rojo (#E74C3C)</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Paleta Secundaria para Lecciones</h2>
+            <p>Colores específicos para categorizar y diferenciar tipos de lecciones.</p>
+            
+            <div class="lesson-palette">
+                <div class="lesson-color-item" style="background-color: var(--lesson-color-1);">
+                    <strong>Gramática</strong><br>#3498DB
+                </div>
+                <div class="lesson-color-item" style="background-color: var(--lesson-color-2);">
+                    <strong>Vocabulario</strong><br>#2ECC71
+                </div>
+                <div class="lesson-color-item" style="background-color: var(--lesson-color-3);">
+                    <strong>Cultura</strong><br>#9B59B6
+                </div>
+                <div class="lesson-color-item" style="background-color: var(--lesson-color-4);">
+                    <strong>Conversación</strong><br>#E67E22
+                </div>
+                <div class="lesson-color-item" style="background-color: var(--lesson-color-5);">
+                    <strong>Ejercicios</strong><br>#1ABC9C
+                </div>
+            </div>
+            
+            <h3>Implementación en lecciones</h3>
+            <p>Cada tipo de lección tendrá un color identificativo:</p>
+            <ul>
+                <li>Lecciones de gramática: Azul (#3498DB)</li>
+                <li>Lecciones de vocabulario: Verde (#2ECC71)</li>
+                <li>Lecciones culturales: Violeta (#9B59B6)</li>
+                <li>Lecciones de conversación: Naranja (#E67E22)</li>
+                <li>Ejercicios prácticos: Turquesa (#1ABC9C)</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Estilos de Texto</h2>
+            
+            <h3>Títulos</h3>
+            <div class="typography-sample font-demo-primary">
+                <div style="font-size: 2.2rem; font-weight: bold; color: var(--color-secondary);">Título Principal</div>
+                <p>Font: Patrick Hand · Size: 2.2rem · Weight: Bold · Color: #5D3F6A</p>
+            </div>
+            
+            <h3>Subtítulos</h3>
+            <div class="typography-sample font-demo-primary">
+                <div style="font-size: 1.8rem; font-weight: bold; color: var(--color-accent);">Subtítulo Llamativo</div>
+                <p>Font: Patrick Hand · Size: 1.8rem · Weight: Bold · Color: #E74C3C</p>
+            </div>
+            
+            <h3>Cuerpo de Texto</h3>
+            <div class="typography-sample font-demo-secondary">
+                <div style="font-size: 1.1rem; color: var(--color-dark);">Este es un ejemplo de texto de cuerpo que demuestra la legibilidad incluso en tamaños pequeños. Perfecto para explicaciones y contenido educativo.</div>
+                <p>Font: Comic Neue · Size: 1.1rem · Weight: Regular · Color: #2C3E50</p>
+            </div>
+            
+            <h3>Botones</h3>
+            <div class="typography-sample">
+                <a href="#" class="button-sample">Botón Primario</a>
+                <a href="#" class="button-sample" style="background-color: var(--color-secondary);">Botón Secundario</a>
+                <p>Font: Comic Neue · Size: 1.1rem · Weight: Bold</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Implementación Técnica</h2>
+            
+            <h3>Compatibilidad Android</h3>
+            <p>Las tipografías seleccionadas están disponibles en Google Fonts y son completamente compatibles con Android Studio.</p>
+            <span class="badge">Google Fonts</span>
+            <span class="badge">Android Compatible</span>
+            
+            <h3>Implementación en XML</h3>
+            <div class="implementation">
+// En el archivo build.gradle (Module: app)
+dependencies {
+    implementation 'com.google.android.material:material:1.6.0'
+}
+
+// Definición de fuentes en res/font/
+// Añadir archivos .ttf de Google Fonts
+
+// Definición de colores en res/values/colors.xml
+&lt;resources&gt;
+    &lt;color name="colorPrimary"&gt;#FFC107&lt;/color&gt;
+    &lt;color name="colorPrimaryDark"&gt;#E6A800&lt;/color&gt;
+    &lt;color name="colorSecondary"&gt;#5D3F6A&lt;/color&gt;
+    &lt;color name="colorAccent"&gt;#E74C3C&lt;/color&gt;
+    &lt;color name="colorText"&gt;#2C3E50&lt;/color&gt;
+    &lt;color name="colorBackground"&gt;#F9F7F0&lt;/color&gt;
+    
+    // Colores para lecciones
+    &lt;color name="lesson_grammar"&gt;#3498DB&lt;/color&gt;
+    &lt;color name="lesson_vocabulary"&gt;#2ECC71&lt;/color&gt;
+    &lt;color name="lesson_culture"&gt;#9B59B6&lt;/color&gt;
+    &lt;color name="lesson_conversation"&gt;#E67E22&lt;/color&gt;
+    &lt;color name="lesson_exercises"&gt;#1ABC9C&lt;/color&gt;
+&lt;/resources&gt;
+
+// Definición de estilos en res/values/styles.xml
+&lt;resources&gt;
+    &lt;style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar"&gt;
+        &lt;item name="colorPrimary"&gt;@color/colorPrimary&lt;/item&gt;
+        &lt;item name="colorPrimaryDark"&gt;@color/colorPrimaryDark&lt;/item&gt;
+        &lt;item name="colorSecondary"&gt;@color/colorSecondary&lt;/item&gt;
+        &lt;item name="colorAccent"&gt;@color/colorAccent&lt;/item&gt;
+        &lt;item name="android:fontFamily"&gt;@font/comic_neue_regular&lt;/item&gt;
+    &lt;/style&gt;
+    
+    &lt;style name="TitleText" parent="TextAppearance.MaterialComponents.Headline5"&gt;
+        &lt;item name="fontFamily"&gt;@font/patrick_hand&lt;/item&gt;
+        &lt;item name="android:textSize"&gt;22sp&lt;/item&gt;
+        &lt;item name="android:textColor"&gt;@color/colorSecondary&lt;/item&gt;
+    &lt;/style&gt;
+    
+    &lt;style name="ButtonStyle" parent="Widget.MaterialComponents.Button"&gt;
+        &lt;item name="android:fontFamily"&gt;@font/comic_neue_bold&lt;/item&gt;
+        &lt;item name="android:textSize"&gt;16sp&lt;/item&gt;
+        &lt;item name="android:textColor"&gt;@android:color/white&lt;/item&gt;
+        &lt;item name="backgroundTint"&gt;@color/colorAccent&lt;/item&gt;
+        &lt;item name="cornerRadius"&gt;24dp&lt;/item&gt;
+    &lt;/style&gt;
+&lt;/resources&gt;
+            </div>
+            
+            <h3>Consideraciones de Accesibilidad</h3>
+            <ul>
+                <li>Contraste de colores superior a 4.5:1 para cumplir con WCAG AA</li>
+                <li>Tamaños de fuente responsivos que se adaptan a las preferencias del sistema</li>
+                <li>Tipografías con caracteres claramente diferenciables</li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Paqu - Aprendiendo Quechua · Historia de Usuario HU-02</p>
+    </footer>
+</body>
+</html>
