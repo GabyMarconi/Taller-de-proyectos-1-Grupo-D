@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta Principal -->
+    <color name="colorPrimary">#FFC107</color>
+    <color name="colorPrimaryDark">#E6A800</color>
+    <color name="colorSecondary">#5D3F6A</color>
+    <color name="colorAccent">#E74C3C</color>
+    <color name="colorText">#2C3E50</color>
+    <color name="colorBackground">#F9F7F0</color>
+
+    <!-- Colores para metas -->
+    <color name="casual_color">#4CAF50</color>
+    <color name="regular_color">#2196F3</color>
+    <color name="serious_color">#FF9800</color>
+    <color name="insane_color">#F44336</color>
+
+    <!-- Colores adicionales -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_light">#F5F5F5</color>
+</resources>

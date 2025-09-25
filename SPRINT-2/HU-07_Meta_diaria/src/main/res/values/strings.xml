@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Paqu - La mejor APP para aprender Quechua</string>
+    <string name="daily_goal">Establece una Meta Diaria</string>
+    <string name="casual">Casual</string>
+    <string name="casual_description">5 minutos al día</string>
+    <string name="regular">Regular</string>
+    <string name="regular_description">10 minutos al día</string>
+    <string name="serious">Serious</string>
+    <string name="serious_description">15 minutos al día</string>
+    <string name="insane">Insane</string>
+    <string name="insane_description">20 minutos al día</string>
+    <string name="save_goal">Guardar Meta</string>
+    <string name="hard_reset">HARD RESET</string>
+    <string name="daily_progress">Tu Progreso Diario</string>
+</resources>
