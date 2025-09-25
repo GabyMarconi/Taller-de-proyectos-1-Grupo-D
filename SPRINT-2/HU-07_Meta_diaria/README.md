@@ -1,5 +1,5 @@
 # HU7 - Act 1 y 3 - Creación de la pantalla Meta Diaria
-
+- Realizado por Elizabeth Carina Lavilla Pillco
 ## Aportes realizados
 - Implementación de interfaz para selección de meta diaria (5, 10, 15 minutos).
 - Lógica para calcular progreso diario basado en tiempo estudiado vs meta.
